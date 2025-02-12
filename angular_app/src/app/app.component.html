@@ -1,0 +1,26 @@
+<h2 style="width: 100%; text-align:center; margin-top: 10px">Contact us:</h2>
+
+<form action="javascript:void(0)" [formGroup]="form" (submit)="send()">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Full Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="from_name">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" formControlName="from_email">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Subject</label>
+    <input type="email" class="form-control" id="exampleFormControlInput3" formControlName="subject">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" formControlName="message"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-dark">Send</button>
+
+</form>
